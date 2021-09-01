@@ -9,39 +9,37 @@ namespace EmployeeWage
             int PER_HOUR = 20;
             int FULL_TIME = 8;
             int PART_TIME = 4;
-            int salary=0;
+            int salary;
             int totalSalary=0;
             int WORKING_DAYS = 20;
-            for(int i = 0; i <= WORKING_DAYS; i++)
+            int WORKING_HRS = 100;
+            int workDays = 0;
+            int workHrs = 0;
+            while(workDays< WORKING_DAYS && workHrs <= WORKING_HRS)
             {
+                workDays++;
                 int rand = new Random().Next(3);
-                switch (rand)
+                if (rand == 0)
                 {
-                    case 0:
-                        salary = PER_HOUR* FULL_TIME;
-                        totalSalary = totalSalary + salary;
-                        Console.WriteLine($"Day {i} Salary : {salary}");
-                        break;
-                    case 1:
-                        salary = PER_HOUR * PART_TIME;
-                        totalSalary = totalSalary + salary;
-                        Console.WriteLine($"Day {i} Salary : {salary}");
-                        
-                        break;
-                    case 2:
-                        salary = 0;
-                        Console.WriteLine($"Day {i} Salary : {salary}");
-                        break;
-                    default: Console.WriteLine(".....");
-                        break;
+                    salary = FULL_TIME * PER_HOUR;
+                    workHrs = workHrs + FULL_TIME;
+                    totalSalary = totalSalary + salary;
                 }
-                if (i == 20)
+                else if (rand == 1)
                 {
-                    Console.WriteLine($"20 Days Salary is : {totalSalary}");
+                    salary = PART_TIME * PER_HOUR;
+                    workHrs = workHrs + PART_TIME;
+                    totalSalary = totalSalary + salary;
+                }
+                else
+                {
+                    salary = 0;
                 }
             }
-            
-            
+            Console.WriteLine($"Total Salary : {totalSalary}");
+            Console.WriteLine($"Total Days : {workDays}");
+            Console.WriteLine($"Total Hours : {workHrs}");
+
         }
     }
 }
