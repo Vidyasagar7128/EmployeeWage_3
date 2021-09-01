@@ -7,9 +7,9 @@ namespace EmployeeWage
         static void Main(string[] args)
         {
             int PER_HOUR = 20;
-            int FULL_TIME = 8;
+            int PART_TIME = 4;
             int salary;
-            salary = PER_HOUR * FULL_TIME;
+            salary = PER_HOUR * PART_TIME;
             Console.WriteLine($"Salary is : {salary}");
             
         }
