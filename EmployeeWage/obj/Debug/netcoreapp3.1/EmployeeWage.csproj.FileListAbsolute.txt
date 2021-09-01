@@ -1,0 +1,14 @@
+C:\Users\vidya\Desktop\DotNet\EmployeeWage\EmployeeWage\bin\Debug\netcoreapp3.1\EmployeeWage.exe
+C:\Users\vidya\Desktop\DotNet\EmployeeWage\EmployeeWage\bin\Debug\netcoreapp3.1\EmployeeWage.deps.json
+C:\Users\vidya\Desktop\DotNet\EmployeeWage\EmployeeWage\bin\Debug\netcoreapp3.1\EmployeeWage.runtimeconfig.json
+C:\Users\vidya\Desktop\DotNet\EmployeeWage\EmployeeWage\bin\Debug\netcoreapp3.1\EmployeeWage.runtimeconfig.dev.json
+C:\Users\vidya\Desktop\DotNet\EmployeeWage\EmployeeWage\bin\Debug\netcoreapp3.1\EmployeeWage.dll
+C:\Users\vidya\Desktop\DotNet\EmployeeWage\EmployeeWage\bin\Debug\netcoreapp3.1\EmployeeWage.pdb
+C:\Users\vidya\Desktop\DotNet\EmployeeWage\EmployeeWage\obj\Debug\netcoreapp3.1\EmployeeWage.csproj.AssemblyReference.cache
+C:\Users\vidya\Desktop\DotNet\EmployeeWage\EmployeeWage\obj\Debug\netcoreapp3.1\EmployeeWage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vidya\Desktop\DotNet\EmployeeWage\EmployeeWage\obj\Debug\netcoreapp3.1\EmployeeWage.AssemblyInfoInputs.cache
+C:\Users\vidya\Desktop\DotNet\EmployeeWage\EmployeeWage\obj\Debug\netcoreapp3.1\EmployeeWage.AssemblyInfo.cs
+C:\Users\vidya\Desktop\DotNet\EmployeeWage\EmployeeWage\obj\Debug\netcoreapp3.1\EmployeeWage.csproj.CoreCompileInputs.cache
+C:\Users\vidya\Desktop\DotNet\EmployeeWage\EmployeeWage\obj\Debug\netcoreapp3.1\EmployeeWage.dll
+C:\Users\vidya\Desktop\DotNet\EmployeeWage\EmployeeWage\obj\Debug\netcoreapp3.1\EmployeeWage.pdb
+C:\Users\vidya\Desktop\DotNet\EmployeeWage\EmployeeWage\obj\Debug\netcoreapp3.1\EmployeeWage.genruntimeconfig.cache
