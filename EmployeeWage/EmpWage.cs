@@ -4,7 +4,10 @@ using System.Text;
 
 namespace EmployeeWage
 {
-    class EmpWage
+    public abstract class Emp {
+        public abstract void CalculateWage();
+    }
+    class EmpWage : Emp
     {
         int PER_HOUR = 20;
         int FULL_TIME = 8;
@@ -16,7 +19,7 @@ namespace EmployeeWage
         int workDays = 0;
         int workHrs = 0;
 
-        public void CalculateWage()
+        public override void CalculateWage()
         {
             while (workDays < WORKING_DAYS && workHrs <= WORKING_HRS)
             {
