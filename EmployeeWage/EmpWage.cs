@@ -5,7 +5,7 @@ using System.Text;
 namespace EmployeeWage
 {
     public abstract class Emp {
-        public abstract void CalculateWage();
+        public abstract void CalculateWage(int i);
     }
     class EmpWage : Emp
     {
@@ -19,8 +19,9 @@ namespace EmployeeWage
         int workDays = 0;
         int workHrs = 0;
 
-        public override void CalculateWage()
+        public override void CalculateWage(int i)
         {
+            Console.WriteLine($"::::: {i}.PVT.LTD :::::");
             while (workDays < WORKING_DAYS && workHrs <= WORKING_HRS)
             {
                 workDays++;
@@ -40,6 +41,11 @@ namespace EmployeeWage
                 else
                 {
                     salary = 0;
+                }
+                if (workHrs > 100)
+                {
+                    workHrs = 100;
+                    Console.WriteLine("Here is not allow to work more than 100 Hrs and 20 Days");
                 }
             }
             Console.WriteLine($"Total Salary : {totalSalary}");
