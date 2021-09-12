@@ -6,8 +6,8 @@ namespace EmployeeWage
 {
     class ManageWages
     {
-        List<int> wage = new List<int>();/// UC9
         EmpWage empWage = new EmpWage();
+        List<int> wage = new List<int>();
         public void Manages()
         {
             int number = int.Parse(Console.ReadLine());
