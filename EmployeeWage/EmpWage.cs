@@ -19,7 +19,6 @@ namespace EmployeeWage
         int WORKING_HRS = 100;
         int workDays = 0;
         int workHrs = 0;
-
         public int CalculateWage()
         {
             while (workDays < WORKING_DAYS && workHrs <= WORKING_HRS)
@@ -31,14 +30,12 @@ namespace EmployeeWage
                     salary = FULL_TIME * PER_HOUR;
                     workHrs = workHrs + FULL_TIME;
                     totalSalary = totalSalary + salary;
-                    //return totalSalary;
                 }
                 else if (rand == 1)
                 {
                     salary = PART_TIME * PER_HOUR;
                     workHrs = workHrs + PART_TIME;
                     totalSalary = totalSalary + salary;
-                    //return totalSalary;
                 }
                 else
                 {
@@ -50,7 +47,6 @@ namespace EmployeeWage
                     Console.WriteLine("Here is not allow to work more than 100 Hrs and 20 Days");
                 }
             }
-            
             return totalSalary;
         }
         public void ShowDetails()
@@ -58,6 +54,10 @@ namespace EmployeeWage
             Console.WriteLine($"Total Salary : {totalSalary}");
             Console.WriteLine($"Total Days : {workDays}");
             Console.WriteLine($"Total Hours : {workHrs}");
+        }
+        public void ShowCompanySalary(int i)
+        {
+            Console.WriteLine($"::::: {i}.PVT.LTD Salary : {totalSalary}");
         }
     }
 }
