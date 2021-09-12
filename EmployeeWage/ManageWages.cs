@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
+using System.Collections;
 namespace EmployeeWage
 {
     class ManageWages
     {
-        List<int> wage = new List<int>();
-
+        ArrayList wage = new ArrayList();
         public void Manages()
         {
             int number = int.Parse(Console.ReadLine());
@@ -20,7 +19,7 @@ namespace EmployeeWage
             }
             foreach(int i in this.wage)
             {
-                Console.WriteLine($"Saved Wage : {i}");
+                Console.WriteLine($"Saved Wage from ArrayList : {i}");
             }
         }
     }
