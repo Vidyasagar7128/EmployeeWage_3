@@ -6,19 +6,21 @@ namespace EmployeeWage
 {
     class ManageWages
     {
-        EmpWage empWage = new EmpWage();
         List<int> wage = new List<int>();
+
         public void Manages()
         {
             int number = int.Parse(Console.ReadLine());
             for (int i = 1; i <= number; i++)
             {
+                Console.WriteLine($"::::: {i}.PVT.LTD :::::");
                 EmpWage empWage = new EmpWage();
-                this.wage.Add(empWage.CalculateWage(i));
+                this.wage.Add(empWage.CalculateWage());
+                empWage.ShowDetails();
             }
             foreach(int i in this.wage)
             {
-                Console.WriteLine($"Wage From List : {i}");
+                Console.WriteLine($"Saved Wage : {i}");
             }
         }
     }
