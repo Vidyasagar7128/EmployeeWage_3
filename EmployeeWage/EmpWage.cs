@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,19 +7,20 @@ namespace EmployeeWage
 {
     public interface Emp
     {
-        void ShowDetails();
+        void ShowDetails(int i);
     }
     class EmpWage : Emp
     {
         int PER_HOUR = 20;
         int FULL_TIME = 8;
         int PART_TIME = 4;
-        int salary;
+        int salary=0;
         int totalSalary = 0;
         int WORKING_DAYS = 20;
         int WORKING_HRS = 100;
         int workDays = 0;
         int workHrs = 0;
+        List<int> sl = new List<int>();
         public int CalculateWage()
         {
             while (workDays < WORKING_DAYS && workHrs <= WORKING_HRS)
@@ -41,23 +43,25 @@ namespace EmployeeWage
                 {
                     salary = 0;
                 }
-                if (workHrs > 100)
-                {
-                    workHrs = 100;
-                    Console.WriteLine("Here is not allow to work more than 100 Hrs and 20 Days");
-                }
+                this.sl.Add(salary);
             }
             return totalSalary;
         }
-        public void ShowDetails()
+        public void ShowDetails(int i)
         {
+            Console.WriteLine($"{i}.PVT.LTD");
             Console.WriteLine($"Total Salary : {totalSalary}");
             Console.WriteLine($"Total Days : {workDays}");
             Console.WriteLine($"Total Hours : {workHrs}");
         }
-        public void ShowCompanySalary(int i)
+        public void ShowCompanySalary()
         {
-            Console.WriteLine($"::::: {i}.PVT.LTD Salary : {totalSalary}");
+            Console.Write("Daily Wage : ");
+            foreach (int i in this.sl)
+            {
+                Console.Write($"{i} ");
+            }
+            Console.WriteLine();
         }
     }
 }

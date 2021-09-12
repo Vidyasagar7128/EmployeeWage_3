@@ -14,8 +14,12 @@ namespace EmployeeWage
             {
                 EmpWage empWage = new EmpWage();
                 this.wage.Add(empWage.CalculateWage());
-                empWage.ShowDetails();
-                empWage.ShowCompanySalary(i);
+                empWage.ShowDetails(i);
+                empWage.ShowCompanySalary();
+            }
+            foreach (int i in this.wage)
+            {
+                Console.WriteLine($"Salary : {i}");///Wage of each company
             }
         }
     }
