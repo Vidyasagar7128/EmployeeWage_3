@@ -11,19 +11,19 @@ namespace EmployeeWage
     }
     class EmpWage : Emp
     {
-        int PER_HOUR = 20;
+        //int PER_HOUR = 20;
         int FULL_TIME = 8;
         int PART_TIME = 4;
         int salary=0;
         int totalSalary = 0;
         int WORKING_DAYS = 20;
-        int WORKING_HRS = 100;
+        int WORKING_HRS = 101;
         int workDays = 0;
         int workHrs = 0;
         List<int> sl = new List<int>();
-        public int CalculateWage()
+        public int CalculateWage(int PER_HOUR)
         {
-            while (workDays < WORKING_DAYS && workHrs <= WORKING_HRS)
+            while (workDays < WORKING_DAYS && workHrs < WORKING_HRS)
             {
                 workDays++;
                 int rand = new Random().Next(3);
