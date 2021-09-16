@@ -19,7 +19,7 @@ namespace EmployeeWage
 
         public int CalculateWage(int i)
         {
-            Console.WriteLine($"::::: {i}.PVT.LTD :::::");
+            Console.WriteLine($"::::: Company : {i}.PVT.LTD :::::");
             while (workDays < WORKING_DAYS && workHrs < WORKING_HRS)
             {
                 workDays++;
