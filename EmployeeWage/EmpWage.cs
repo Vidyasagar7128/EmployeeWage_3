@@ -11,7 +11,6 @@ namespace EmployeeWage
     }
     class EmpWage : Emp
     {
-        //int PER_HOUR = 20;
         int FULL_TIME = 8;
         int PART_TIME = 4;
         int salary=0;
@@ -23,6 +22,7 @@ namespace EmployeeWage
         List<int> sl = new List<int>();
         public int CalculateWage(int PER_HOUR)
         {
+            Console.WriteLine($"::::: Company : {i}.PVT.LTD :::::");
             while (workDays < WORKING_DAYS && workHrs < WORKING_HRS)
             {
                 workDays++;
